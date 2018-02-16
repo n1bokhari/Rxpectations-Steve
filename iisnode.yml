@@ -1,0 +1,19 @@
+node_env: 
+#specify to force a particular environment
+#node_env:
+#leave empty to default to the NODE_ENV environment variable
+
+loggingEnabled: true
+logDirectory: iisnode
+
+maxLogFileSizeInKB: 128
+maxTotalLogFileSizeInKB: 1024
+maxLogFiles: 20
+debuggingEnabled: true
+devErrorsEnabled: true
+#debuggingEnabled and devErrorsEnabled *should* be overridden by environment variables
+#BUT... we'll default to false and we can simply edit this file in place after deployment to dev/staging if necessary
+#so for now we don't use the environment variables
+#IISNODE_debuggingEnabled
+#IISNODE_devErrorsEnabled
+
