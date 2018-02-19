@@ -85,7 +85,7 @@
 
     "integrations": {
         "openFDA": {
-            "apiKey": "fWo3VYTbToPaLcFem1T9ZJqqNHNmetmU3peGa1BF",
+            "apiKey": "0uxxjgwTVmyNkyohXw8JFjSqfMxkrmqClSeOLUbJ",
             "hostname": "api.fda.gov",
             "endpoints": {
                 "drug": {
