@@ -87,10 +87,10 @@ selectNodeVersion () {
       NODE_EXE=node
     fi
 
-    #NPM_CMD="\"$NODE_EXE\" \"$NPM_JS_PATH\""
+    NPM_CMD="\"$NODE_EXE\" \"$NPM_JS_PATH\""
     # Manually setting npm version to npm@3.1.0
     #NPM_CMD="\"$NODE_EXE\" \"$PROGRAMFILES\\npm\\5.5.1\\node_modules\\npm\\bin\\npm-cli.js\""
-	NPM_CMD="\"$NODE_EXE\" \"$PROGRAMFILES\\npm\\5.0.3\\node_modules\\npm\\bin\\npm-cli.js\""
+	#NPM_CMD="\"$NODE_EXE\" \"$PROGRAMFILES\\npm\\5.0.3\\node_modules\\npm\\bin\\npm-cli.js\""
 
   else
     NPM_CMD=npm
