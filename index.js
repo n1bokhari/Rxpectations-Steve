@@ -1,8 +1,7 @@
 'use strict';
 
 // Set monitoring
-//comment out for intial POC
-//require('newrelic');
+require('newrelic');
 
 var express = require('express');
 var kraken = require('kraken-js');
