@@ -14,7 +14,7 @@ module.exports = function jshint(grunt) {
         ],
         options: {
             jshintrc: '.jshintrc',
-            reporterOutput: ''
+												reporterOutput: ''
         }
     };
 };
