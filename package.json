@@ -7,10 +7,11 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "postinstall": "./node_modules/.bin/grunt build"			
   },
   "engines": {
-   "node": "6.11.1",
+   "node": "6.11.0",
    "npm": "^2.11.2"
   },
   "dependencies": {

@@ -123,12 +123,12 @@ fi
 
 
 # 4. Run Grunt Task
-if [ -e "$DEPLOYMENT_TARGET/Gruntfile.js" ]; then
-  cd "$DEPLOYMENT_TARGET"
-  eval ./node_modules/.bin/grunt build
-  exitWithMessageOnError "Grunt failed"
-  cd - > /dev/null
-fi
+#if [ -e "$DEPLOYMENT_TARGET/Gruntfile.js" ]; then
+#  cd "$DEPLOYMENT_TARGET"
+#  eval ./node_modules/.bin/grunt build
+#  exitWithMessageOnError "Grunt failed"
+#  cd - > /dev/null
+#fi
 
 
 
