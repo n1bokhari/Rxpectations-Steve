@@ -1,4 +1,4 @@
-node_env: 
+node_env: production
 #specify to force a particular environment
 #node_env:
 #leave empty to default to the NODE_ENV environment variable
