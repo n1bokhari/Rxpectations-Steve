@@ -55,7 +55,7 @@ module.exports = function (router) {
                     res.render(path.normalize('errors/404'), errorModel);
                 }
             } else {
-                
+
                 model.recalls = (info.recalls === undefined)?null:info.recalls;
                 model.recallsTotal = (info.recalls === undefined)?0:info.recalls.length;
                 model.drugInfo = info.drugInfo.drugInfo;
@@ -67,7 +67,7 @@ module.exports = function (router) {
         };
 
         var getRecalls = new getData(
-            'http://localhost:' + (process.env.PORT || 8000)+'/integrations/openFDA/info?drug='+model.drugname+'&mode=name',
+            process.env.API_URL +'/integrations/openFDA/info?drug='+model.drugname+'&mode=name',
             { timer: false },
             handleRecalls);
 
@@ -93,7 +93,7 @@ module.exports = function (router) {
         };
 
         var getSearchResults = new getData(
-            'http://localhost:' + (process.env.PORT || 8000)+ '/integrations/openFDA/?drug='+req.query.term+'&mode=all',
+            process.env.API_URL + '/integrations/openFDA/?drug='+req.query.term+'&mode=all',
             {timer: false},
             handleSearchResults);
     });
