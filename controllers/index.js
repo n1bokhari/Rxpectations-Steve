@@ -66,7 +66,7 @@ module.exports = function (router) {
             }
         };
 
-        var getRecalls = new getData(
+        var getRecalls = new getDataHTTPS(
             process.env.API_URL +'/integrations/openFDA/info?drug='+model.drugname+'&mode=name',
             { timer: false },
             handleRecalls);
@@ -92,7 +92,7 @@ module.exports = function (router) {
             res.render('search', model);
         };
 
-        var getSearchResults = new getData(
+        var getSearchResults = new getDataHTTPS(
             process.env.API_URL + '/integrations/openFDA/?drug='+req.query.term+'&mode=all',
             {timer: false},
             handleSearchResults);
